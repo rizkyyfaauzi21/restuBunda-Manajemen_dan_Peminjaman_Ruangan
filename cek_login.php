@@ -1,10 +1,10 @@
-<?php
+     <?php
 if(session_status() === PHP_SESSION_NONE)
     session_start();
 
 include "config/koneksi.php";
-include "fungsi/pesan_kilat.php";
-include "fungsi/anti_injection.php";
+include "function/pesan_kilat.php";
+include "function/anti_injection.php";
 
 $username = antiinjection($koneksi, $_POST['username']);
 $password = antiinjection($koneksi, $_POST['password']);
@@ -15,7 +15,7 @@ $row = mysqli_fetch_assoc($result);
 mysqli_close($koneksi);
 $salt = $row['salt'];
 $hashed_password = $row['hashed_password'];
-
+header("Location: index.php");
 if($salt !== null && $hashed_password !== null){
     $combined_password  = $salt . $password;
 

@@ -1,13 +1,18 @@
 :root{
-    --warna-biru: #10375C;
-    --warna-hijau: #127681;
-    --warna-putih: #fff;
-    --warna-hitam: #222;
-    --warna-background: #f4f6ff;
+    --warna-biru: #10375C !important;
+    --warna-hijau: #127681 !important;
+    --warna-putih: #fff !important;
+    --warna-hitam: #222 !important;
+    --warna-background: #f4f6ff !important;
+    --warna-kuning: #F3C623 !important;
 }
 
 .biru{
     color: var(--warna-biru);
+}
+
+.putih{
+    color: var(--warna-putih);
 }
 
 .btn-hijau{
@@ -15,12 +20,31 @@
     background-color: var(--warna-hijau);
 }
 
+
 .btn-hijau:hover{
     background-color: #0f666f !important;
 }
 
+.btn-hijau:active{
+    background-color: var(--warna-hijau);
+}
+
 .bg-biru{
     background-color: var(--warna-biru);
+}
+
+.bg-default{
+    color: var(--warna-background);
+    background-color: var(--warna-background);
+    accent-color: var(--warna-background);
+}
+
+.bg-putih{
+    background-color: var(--warna-putih);
+}
+
+.bg-putih:hover{
+    background-color: var(--warna-kuning);
 }
 
 .form-default{
@@ -37,4 +61,32 @@
 
 .label-hitam{
     color: var(--warna-hitam);
+}
+
+.sidebar li a ul{
+    background-color: var(--warna-putih);
+}
+
+.sidebar li a ul:hover{
+    background-color: var(--warna-kuning);
+}
+
+.hoveran:hover{
+    background-color: #F3C623;
+}
+
+.list-group .list-group-item:hover{
+    background-color: #F3C623;
+    border-color: var(--warna-kuning);
+}
+
+/* li:hover li:active u:hover u:active ul:hover ul:active div:hover{
+    color: var(--warna-kuning) !important;
+    background-color: var(--warna-kuning) !important;
+    cursor: pointer;
+    pointer-events:visibleFill;
+} */
+
+.hover-kuning:hover{
+    background-color: var(--warna-kuning);
 }
