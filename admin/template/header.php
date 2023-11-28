@@ -25,7 +25,8 @@
         }
     </style>
 </head>
-<body>
+<body class="bg-user-default">
+<div >
     <div class="container-fluid d-flex flex-row p-0">
         <header class="z-1 navbar sticky-top bg-biru flex-md-nowrap shadow w-100 pe-4 shadow-none">
             <!-- <i class="h2 bi bi-list putih"></i> -->
@@ -44,5 +45,6 @@
             </div>
         </header>
     </div>
+</div>
 </body>
 <!-- </html> -->
