@@ -63,30 +63,17 @@
     color: var(--warna-hitam);
 }
 
-.sidebar li a ul{
-    background-color: var(--warna-putih);
-}
-
-.sidebar li a ul:hover{
-    background-color: var(--warna-kuning);
-}
-
-.hoveran:hover{
+.hover-effect:hover{
+    border-radius: 3px !important;
     background-color: #F3C623;
+    color: #fff;
 }
 
-.list-group .list-group-item:hover{
-    background-color: #F3C623;
-    border-color: var(--warna-kuning);
-}
-
-/* li:hover li:active u:hover u:active ul:hover ul:active div:hover{
-    color: var(--warna-kuning) !important;
-    background-color: var(--warna-kuning) !important;
-    cursor: pointer;
-    pointer-events:visibleFill;
-} */
-
-.hover-kuning:hover{
-    background-color: var(--warna-kuning);
+.bg-user-default{
+    background-color: var(--warna-biru); 
+    opacity: 1;
+    background-image: url(../../assets/img/gedung_sipil.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
